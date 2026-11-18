@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - JavaScript Output</title>
+</head>
+<body>
+
+    <h1>Demostración de Output en Javascript</h1>
+
+    <button onclick="mostrarAlerta()">
+        Mostrar alerta
+    </button>
+
+    <button onclick="cambiarTexto()">
+        Cambiar texto
+    </button>
+
+    <p id="mensaje"></p>
+
+    <script>
+        function mostrarAlerta() {
+            alert("Fer");
+        }
+
+        function cambiarTexto() {
+            document.getElementById("mensaje").textContent =
+                "¡Texto actualizado con Javascript!";
+        }
+
+        console.log("Página cargada correctamente");
+    </script>
+
+</body>
+</html>
